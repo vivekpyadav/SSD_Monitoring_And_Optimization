@@ -1,0 +1,47 @@
+{
+  "alerts": [
+    {
+      "alert": {
+        "name": "High Temperature Alert",
+        "expr": "ssd_temperature_celsius > 70",
+        "for": "1m",
+        "labels": {
+          "severity": "critical"
+        },
+        "annotations": {
+          "summary": "SSD temperature exceeds 70°C"
+        }
+      },
+      "evaluation_interval": "15s",
+      "duration": "5m",
+      "notifications": [
+        {
+          "type": "email",
+          "email": "your-email@example.com"
+        }
+      ]
+    },
+    {
+      "alert": {
+        "name": "High Wear Level Alert",
+        "expr": "ssd_wear_level > 90",
+        "for": "1m",
+        "labels": {
+          "severity": "critical"
+        },
+        "annotations": {
+          "summary": "SSD wear level exceeds 90%"
+        }
+      },
+      "evaluation_interval": "15s",
+      "duration": "5m",
+      "notifications": [
+        {
+          "type": "email",
+          "email": "your-email@example.com"
+        }
+      ]
+    }
+  ]
+}
+

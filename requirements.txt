@@ -1,0 +1,7 @@
+# SSD Monitoring Project dependencies
+psutil==5.9.4
+prometheus_client==0.14.1
+pyyaml==6.0.2
+schedule==1.1.0
+requests==2.28.1
+

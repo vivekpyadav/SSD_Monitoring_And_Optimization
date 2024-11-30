@@ -1,0 +1,57 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "ssd-monitoring-dashboard",
+    "title": "SSD Monitoring Dashboard",
+    "tags": ["ssd", "monitoring"],
+    "timezone": "browser",
+    "rows": [
+      {
+        "title": "SSD Metrics",
+        "panels": [
+          {
+            "type": "graph",
+            "title": "Temperature",
+            "targets": [
+              {
+                "expr": "ssd_temperature_celsius",
+                "format": "time_series",
+                "interval": "15s"
+              }
+            ],
+            "xaxis": {
+              "mode": "time",
+              "name": null,
+              "values": []
+            },
+            "yaxis": {
+              "format": "celsius",
+              "label": "Temperature (°C)"
+            }
+          },
+          {
+            "type": "graph",
+            "title": "Wear Level",
+            "targets": [
+              {
+                "expr": "ssd_wear_level",
+                "format": "time_series",
+                "interval": "15s"
+              }
+            ],
+            "xaxis": {
+              "mode": "time",
+              "name": null,
+              "values": []
+            },
+            "yaxis": {
+              "format": "percent",
+              "label": "Wear Level (%)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,16 @@
+# Main configuration file for SSD Monitoring Project
+
+monitoring:
+  interval_seconds: 60  # Interval to run monitoring tasks
+  disks:
+    - /dev/sda
+    - /dev/nvme0n1
+
+thresholds:
+  temperature_celsius: 70  # Alert if temperature exceeds this value
+  wear_level: 90           # Alert if wear level exceeds this percentage
+
+logging:
+  log_level: INFO
+  log_file: logs/ssd_monitor.log
+
