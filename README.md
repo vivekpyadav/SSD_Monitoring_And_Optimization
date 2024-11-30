@@ -12,6 +12,6 @@ This project monitors the health and performance of SSDs and provides maintenanc
 
 1. Clone the repository:
    ```bash
-   git clone https://your-repository-url.git
-   cd ssd-monitoring-project
+   git clone https://github.com/vivekpyadav/SSD_Monitoring_And_Optimization.git
+   cd SSD_Monitoring_And_Optimization
 
